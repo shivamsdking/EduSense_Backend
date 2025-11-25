@@ -8,7 +8,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 class GeminiClient {
     constructor() {
         // Validate API key
-        const apiKey = process.env.GEMINI_API_KEY || 'AIzaSyD-_Fscp3PucqBRNTHNUGjaSgUGzRpRtAk';
+        const apiKey = process.env.GEMINI_API_KEY;
 
         if (!apiKey) {
             console.warn('⚠️ GEMINI_API_KEY is not set! AI features will not work.');
